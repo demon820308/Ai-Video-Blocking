@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="960" height="540">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1320"/>
+      <stop offset="100%" stop-color="#141c2b"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0ea5e9"/>
+    </linearGradient>
+    <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c084fc"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+    <marker id="arrowCyan" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#38bdf8"/>
+    </marker>
+    <marker id="arrowAmber" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#f59e0b"/>
+    </marker>
+    <marker id="arrowMuted" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#64748b"/>
+    </marker>
+    <style>
+      .font { font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans SC", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      .title { font-size: 16px; font-weight: 700; fill: #f8fafc; }
+      .sub { font-size: 13px; fill: #94a3b8; }
+      .pill { font-size: 12px; font-weight: 700; fill: #0f172a; }
+      .tag { font-size: 12px; font-weight: 600; fill: #e2e8f0; }
+      .branch-title { font-size: 13px; font-weight: 700; fill: #f8fafc; }
+      .branch-sub { font-size: 12px; fill: #cbd5e1; }
+      .loop-text { font-size: 12px; font-weight: 600; fill: #fbbf24; }
+    </style>
+  </defs>
+
+  <!-- Canvas -->
+  <rect width="960" height="540" rx="16" fill="url(#bg)"/>
+  <rect x="1" y="1" width="958" height="538" rx="15" fill="none" stroke="#243045" stroke-width="1.5"/>
+
+  <!-- Input Pill -->
+  <rect x="280" y="24" width="320" height="44" rx="22" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="440" y="51" text-anchor="middle" class="font title" style="font-size:15px;">粗想法 / 剧本 / 场景图 / 人物图</text>
+
+  <!-- Connector: Input -> Step 1 -->
+  <line x1="440" y1="68" x2="440" y2="96" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrowCyan)"/>
+
+  <!-- Step 1 Card -->
+  <rect x="44" y="100" width="792" height="68" rx="12" fill="#182234" stroke="#2d3c56" stroke-width="1.5"/>
+  <rect x="60" y="118" width="66" height="32" rx="8" fill="url(#cyanGrad)"/>
+  <text x="93" y="139" text-anchor="middle" class="font pill">STEP 1</text>
+  <text x="142" y="131" class="font title">调度排戏（本 Skill）</text>
+  <text x="142" y="153" class="font sub">锁定空间地标与 180° 轴线、生成俯视示意图、逐镜调度表与首帧生图提示词</text>
+
+  <!-- Connector: Step 1 -> Step 2 -->
+  <line x1="440" y1="168" x2="440" y2="196" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrowCyan)"/>
+
+  <!-- Step 2 Card -->
+  <rect x="44" y="200" width="792" height="68" rx="12" fill="#182234" stroke="#2d3c56" stroke-width="1.5"/>
+  <rect x="60" y="218" width="66" height="32" rx="8" fill="url(#cyanGrad)"/>
+  <text x="93" y="239" text-anchor="middle" class="font pill">STEP 2</text>
+  <text x="142" y="231" class="font title">生成首帧图 + 看图验收（本 Skill）</text>
+  <text x="142" y="253" class="font sub">直接看图排查背景漂移、服装跳变、视线偏移与左右手错位，给出局部改图指令定稿</text>
+
+  <!-- Connector: Step 2 -> Step 3 -->
+  <line x1="440" y1="268" x2="440" y2="296" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrowCyan)"/>
+
+  <!-- Step 3 Card (with 2 model branches) -->
+  <rect x="44" y="300" width="792" height="122" rx="12" fill="#182234" stroke="#2d3c56" stroke-width="1.5"/>
+  <rect x="60" y="314" width="66" height="30" rx="8" fill="url(#amberGrad)"/>
+  <text x="93" y="334" text-anchor="middle" class="font pill">STEP 3</text>
+  <text x="142" y="335" class="font title">目标模型专用成词（本 Skill 自动分流）</text>
+
+  <!-- Branch A: Seedance -->
+  <rect x="60" y="356" width="372" height="52" rx="9" fill="#1e293b" stroke="#f59e0b" stroke-width="1.2"/>
+  <text x="76" y="377" class="font branch-title" style="fill:#fbbf24;">Seedance 2.5 / 2.0（T2V / I2V / Ref2V）</text>
+  <text x="76" y="397" class="font branch-sub">官方四段式结构 · 连续整数秒时间戳 · 防翻车避坑</text>
+
+  <!-- Branch B: MiniMax H3 -->
+  <rect x="448" y="356" width="372" height="52" rx="9" fill="#1e293b" stroke="#a855f7" stroke-width="1.2"/>
+  <text x="464" y="377" class="font branch-title" style="fill:#c084fc;">MiniMax H3（T2VA ~ Ref2VA 五模式）</text>
+  <text x="464" y="397" class="font branch-sub">首行对齐指令 · 英文多模态三/六段式 · 原语言对白</text>
+
+  <!-- Connector: Step 3 -> Step 4 -->
+  <line x1="440" y1="422" x2="440" y2="450" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrowCyan)"/>
+
+  <!-- Step 4 Card -->
+  <rect x="44" y="454" width="792" height="62" rx="12" fill="#182234" stroke="#38bdf8" stroke-width="1.5"/>
+  <rect x="60" y="469" width="66" height="32" rx="8" fill="url(#purpleGrad)"/>
+  <text x="93" y="490" text-anchor="middle" class="font pill" style="fill:#ffffff;">STEP 4</text>
+  <text x="142" y="483" class="font title">平台生成视频 + 样片局部返修</text>
+  <text x="142" y="504" class="font sub">在 Seedance / MiniMax H3 生成视频；如有串位、换手或越轴，回传关键帧或时间点局部改词</text>
+
+  <!-- Feedback Loop Arrow on Right -->
+  <path d="M 836 485 L 892 485 Q 912 485 912 465 L 912 254 Q 912 234 892 234 L 844 234" fill="none" stroke="#f59e0b" stroke-width="2" stroke-dasharray="6,5" marker-end="url(#arrowAmber)"/>
+  <rect x="866" y="330" width="78" height="44" rx="8" fill="#1e293b" stroke="#f59e0b" stroke-width="1"/>
+  <text x="905" y="349" text-anchor="middle" class="font loop-text">偏差回传</text>
+  <text x="905" y="366" text-anchor="middle" class="font loop-text">局部返修</text>
+</svg>

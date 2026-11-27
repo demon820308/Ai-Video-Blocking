@@ -90,23 +90,9 @@ git clone https://github.com/demon820308/Ai-Video-Blocking.git
 
 ### 1. 标准 4 步出片流程
 
-```text
-粗想法 / 剧本 / 参考图
-        │
-        ▼
-[1] 调度排戏（本 Skill）──▶ 空间地标、俯视示意图、逐镜调度表、首帧生图词
-        │
-        ▼
-[2] 生成首帧图 + 看图验收（本 Skill）──▶ 抓出背景/服装/视线/左右手偏差，局部修到定稿
-        │
-        ▼
-[3] 目标模型专用成词（本 Skill 自动分流）
-        ├──▶ Seedance 2.5 / 2.0：四段式结构 + 连续整数秒时间戳 + 防翻车规则
-        └──▶ MiniMax H3：首行对齐指令 + T2VA/I2VA/FL2VA/L2VA/Ref2VA 专用多模态结构
-        │
-        ▼
-[4] 平台生成视频 ──▶ 如有串位/换手/越轴，回传关键帧或时间点获取局部修正指令
-```
+<p align="center">
+  <img src="assets/workflow-zh.svg" alt="标准 4 步出片流程" width="100%" />
+</p>
 
 ### 2. 直接填空就能发的输入模板
 
@@ -146,6 +132,8 @@ Ai-Video-Blocking/
 ├── README_EN.md                           # 英文说明
 ├── assets/                                # README 展示素材
 │   ├── hero-cover.jpg                     # 仓库头图
+│   ├── workflow-zh.svg                    # 中文 4 步出片流程图
+│   ├── workflow-en.svg                    # 英文 4 步出片流程图
 │   ├── demo-shot1-keyframe.jpg            # 实测镜头 1 首帧图
 │   └── demo-shot2-keyframe.jpg            # 实测镜头 2 首帧图
 ├── references/                            # 按需加载的细则与模型规范（渐进披露）

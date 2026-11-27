@@ -88,23 +88,9 @@ Keep `SKILL.md` at the root with `references/` and `templates/` intact:
 
 ### 1. Standard 4-Step Workflow
 
-```text
-Rough Idea / Script / Reference Images
-        │
-        ▼
-[1] Blocking & Staging (this skill) ──▶ Landmarks, top-down map, shot table, first-frame prompts
-        │
-        ▼
-[2] Generate Keyframes + Visual QA (this skill) ──▶ Catch drift/hand/axis errors & patch locally
-        │
-        ▼
-[3] Model-Specific Video Prompts (auto-routed)
-        ├──▶ Seedance 2.5 / 2.0: 4-part structure + continuous timestamps + anti-failure rules
-        └──▶ MiniMax H3: alignment header + T2VA / I2VA / FL2VA / L2VA / Ref2VA multimodal format
-        │
-        ▼
-[4] Render Video ──▶ If motion drifts or hands swap, feed keyframes/timestamps back for local fixes
-```
+<p align="center">
+  <img src="assets/workflow-en.svg" alt="Standard 4-Step Workflow" width="100%" />
+</p>
 
 ### 2. Copy-Paste Input Template
 
@@ -144,6 +130,8 @@ Ai-Video-Blocking/
 ├── README_EN.md                           # English README (this file)
 ├── assets/                                # README showcase visuals
 │   ├── hero-cover.jpg
+│   ├── workflow-zh.svg
+│   ├── workflow-en.svg
 │   ├── demo-shot1-keyframe.jpg
 │   └── demo-shot2-keyframe.jpg
 ├── references/                            # On-demand rules & model specs

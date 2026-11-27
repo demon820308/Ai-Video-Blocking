@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 540" width="960" height="540">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1320"/>
+      <stop offset="100%" stop-color="#141c2b"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0ea5e9"/>
+    </linearGradient>
+    <linearGradient id="amberGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c084fc"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+    <marker id="arrowCyan" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#38bdf8"/>
+    </marker>
+    <marker id="arrowAmber" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#f59e0b"/>
+    </marker>
+    <style>
+      .font { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+      .title { font-size: 16px; font-weight: 700; fill: #f8fafc; }
+      .sub { font-size: 13px; fill: #94a3b8; }
+      .pill { font-size: 12px; font-weight: 700; fill: #0f172a; }
+      .branch-title { font-size: 13px; font-weight: 700; fill: #f8fafc; }
+      .branch-sub { font-size: 12px; fill: #cbd5e1; }
+      .loop-text { font-size: 11px; font-weight: 600; fill: #fbbf24; }
+    </style>
+  </defs>
+
+  <!-- Canvas -->
+  <rect width="960" height="540" rx="16" fill="url(#bg)"/>
+  <rect x="1" y="1" width="958" height="538" rx="15" fill="none" stroke="#243045" stroke-width="1.5"/>
+
+  <!-- Input Pill -->
+  <rect x="255" y="24" width="370" height="44" rx="22" fill="#1e293b" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="440" y="51" text-anchor="middle" class="font title" style="font-size:15px;">Rough Idea / Script / Scene &amp; Character Refs</text>
+
+  <!-- Connector: Input -> Step 1 -->
+  <line x1="440" y1="68" x2="440" y2="96" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrowCyan)"/>
+
+  <!-- Step 1 Card -->
+  <rect x="44" y="100" width="792" height="68" rx="12" fill="#182234" stroke="#2d3c56" stroke-width="1.5"/>
+  <rect x="60" y="118" width="66" height="32" rx="8" fill="url(#cyanGrad)"/>
+  <text x="93" y="139" text-anchor="middle" class="font pill">STEP 1</text>
+  <text x="142" y="131" class="font title">Blocking &amp; Staging (This Skill)</text>
+  <text x="142" y="153" class="font sub">Lock landmarks &amp; 180° axis, top-down blocking map, shot-by-shot table &amp; first-frame prompts</text>
+
+  <!-- Connector: Step 1 -> Step 2 -->
+  <line x1="440" y1="168" x2="440" y2="196" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrowCyan)"/>
+
+  <!-- Step 2 Card -->
+  <rect x="44" y="200" width="792" height="68" rx="12" fill="#182234" stroke="#2d3c56" stroke-width="1.5"/>
+  <rect x="60" y="218" width="66" height="32" rx="8" fill="url(#cyanGrad)"/>
+  <text x="93" y="239" text-anchor="middle" class="font pill">STEP 2</text>
+  <text x="142" y="231" class="font title">Keyframe Generation + Visual QA (This Skill)</text>
+  <text x="142" y="253" class="font sub">Inspect keyframes for background drift, wardrobe jumps, gaze &amp; L/R hand errors; patch locally</text>
+
+  <!-- Connector: Step 2 -> Step 3 -->
+  <line x1="440" y1="268" x2="440" y2="296" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrowCyan)"/>
+
+  <!-- Step 3 Card -->
+  <rect x="44" y="300" width="792" height="122" rx="12" fill="#182234" stroke="#2d3c56" stroke-width="1.5"/>
+  <rect x="60" y="314" width="66" height="30" rx="8" fill="url(#amberGrad)"/>
+  <text x="93" y="334" text-anchor="middle" class="font pill">STEP 3</text>
+  <text x="142" y="335" class="font title">Model-Specific Video Prompts (Auto-Routed)</text>
+
+  <!-- Branch A: Seedance -->
+  <rect x="60" y="356" width="372" height="52" rx="9" fill="#1e293b" stroke="#f59e0b" stroke-width="1.2"/>
+  <text x="76" y="377" class="font branch-title" style="fill:#fbbf24;">Seedance 2.5 / 2.0 (T2V / I2V / Ref2V)</text>
+  <text x="76" y="397" class="font branch-sub">4-part structure · Continuous timestamps · Anti-failure rules</text>
+
+  <!-- Branch B: MiniMax H3 -->
+  <rect x="448" y="356" width="372" height="52" rx="9" fill="#1e293b" stroke="#a855f7" stroke-width="1.2"/>
+  <text x="464" y="377" class="font branch-title" style="fill:#c084fc;">MiniMax H3 (T2VA ~ Ref2VA)</text>
+  <text x="464" y="397" class="font branch-sub">Alignment header · 3/6-section multimodal · Native dialogue</text>
+
+  <!-- Connector: Step 3 -> Step 4 -->
+  <line x1="440" y1="422" x2="440" y2="450" stroke="#38bdf8" stroke-width="2" marker-end="url(#arrowCyan)"/>
+
+  <!-- Step 4 Card -->
+  <rect x="44" y="454" width="792" height="62" rx="12" fill="#182234" stroke="#38bdf8" stroke-width="1.5"/>
+  <rect x="60" y="469" width="66" height="32" rx="8" fill="url(#purpleGrad)"/>
+  <text x="93" y="490" text-anchor="middle" class="font pill" style="fill:#ffffff;">STEP 4</text>
+  <text x="142" y="483" class="font title">Render Video + Sample Patching</text>
+  <text x="142" y="504" class="font sub">Generate on Seedance / MiniMax H3; feed back keyframes or timestamps for localized fixes</text>
+
+  <!-- Feedback Loop Arrow -->
+  <path d="M 836 485 L 892 485 Q 912 485 912 465 L 912 254 Q 912 234 892 234 L 844 234" fill="none" stroke="#f59e0b" stroke-width="2" stroke-dasharray="6,5" marker-end="url(#arrowAmber)"/>
+  <rect x="862" y="330" width="84" height="44" rx="8" fill="#1e293b" stroke="#f59e0b" stroke-width="1"/>
+  <text x="904" y="349" text-anchor="middle" class="font loop-text">Local Fix</text>
+  <text x="904" y="365" text-anchor="middle" class="font loop-text">Feedback</text>
+</svg>
