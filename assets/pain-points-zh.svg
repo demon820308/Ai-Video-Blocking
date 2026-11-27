@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 320" width="960" height="320">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1320"/>
+      <stop offset="100%" stop-color="#141c2b"/>
+    </linearGradient>
+    <style>
+      .font { font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans SC", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      .h { font-size: 15px; font-weight: 700; fill: #f8fafc; }
+      .bad { font-size: 13px; font-weight: 700; fill: #f87171; }
+      .good { font-size: 13px; font-weight: 700; fill: #34d399; }
+      .desc { font-size: 12px; fill: #cbd5e1; }
+      .muted { font-size: 11px; fill: #94a3b8; }
+    </style>
+  </defs>
+  <rect width="960" height="320" rx="16" fill="url(#bg)"/>
+  <rect x="1" y="1" width="958" height="318" rx="15" fill="none" stroke="#243045" stroke-width="1.5"/>
+
+  <text x="480" y="34" text-anchor="middle" class="font h">普通提示词 4 大高频翻车 vs Ai-Video-Blocking 解法</text>
+
+  <!-- Card 1 -->
+  <rect x="28" y="54" width="216" height="240" rx="12" fill="#182234" stroke="#2d3c56" stroke-width="1.2"/>
+  <text x="44" y="82" class="font bad">✗ 切镜越轴 · 左右串位</text>
+  <text x="44" y="106" class="font muted">镜 1 A 在左看右，镜 2 A</text>
+  <text x="44" y="123" class="font muted">突然跑到右看左，观众迷失</text>
+  <line x1="44" y1="142" x2="228" y2="142" stroke="#2d3c56" stroke-width="1"/>
+  <text x="44" y="168" class="font good">✓ 固定坐标 + 180° 轴线</text>
+  <text x="44" y="192" class="font desc">先定东南西北固定地标，</text>
+  <text x="44" y="210" class="font desc">正反打机位锁定轴线同侧，</text>
+  <text x="44" y="228" class="font desc">换机位重算画面左/中/右。</text>
+  <rect x="44" y="250" width="184" height="28" rx="6" fill="#0f172a"/>
+  <text x="136" y="268" text-anchor="middle" class="font muted" style="fill:#38bdf8;">跨镜方向零错乱</text>
+
+  <!-- Card 2 -->
+  <rect x="258" y="54" width="216" height="240" rx="12" fill="#182234" stroke="#2d3c56" stroke-width="1.2"/>
+  <text x="274" y="82" class="font bad">✗ 道具瞬移 · 莫名换手</text>
+  <text x="274" y="106" class="font muted">上一秒右手拿文件，下一秒</text>
+  <text x="274" y="123" class="font muted">跳到左手，或递物时凭空消失</text>
+  <line x1="274" y1="142" x2="458" y2="142" stroke="#2d3c56" stroke-width="1"/>
+  <text x="274" y="168" class="font good">✓ 左右手 ↔ 画面交叉校验</text>
+  <text x="274" y="192" class="font desc">全程锁定人物自己的左/右手，</text>
+  <text x="274" y="210" class="font desc">面对镜头时左手=画面右侧，</text>
+  <text x="274" y="228" class="font desc">交接写明接触点与空手状态。</text>
+  <rect x="274" y="250" width="184" height="28" rx="6" fill="#0f172a"/>
+  <text x="366" y="268" text-anchor="middle" class="font muted" style="fill:#38bdf8;">道具交接不断档</text>
+
+  <!-- Card 3 -->
+  <rect x="488" y="54" width="216" height="240" rx="12" fill="#182234" stroke="#2d3c56" stroke-width="1.2"/>
+  <text x="504" y="82" class="font bad">✗ 动作超载 · 走位穿模</text>
+  <text x="504" y="106" class="font muted">5 秒塞进 4 段动作+环绕，</text>
+  <text x="504" y="123" class="font muted">模型快进失真、互相遮挡穿模</text>
+  <line x1="504" y1="142" x2="688" y2="142" stroke="#2d3c56" stroke-width="1"/>
+  <text x="504" y="168" class="font good">✓ 可排练走位 + 拆镜预警</text>
+  <text x="504" y="192" class="font desc">写清从谁身前/身后经过、</text>
+  <text x="504" y="210" class="font desc">遮挡后从哪侧重入画；复杂</text>
+  <text x="504" y="228" class="font desc">场面主动预警并给拆镜方案。</text>
+  <rect x="504" y="250" width="184" height="28" rx="6" fill="#0f172a"/>
+  <text x="596" y="268" text-anchor="middle" class="font muted" style="fill:#38bdf8;">动作稳定可执行</text>
+
+  <!-- Card 4 -->
+  <rect x="718" y="54" width="214" height="240" rx="12" fill="#182234" stroke="#2d3c56" stroke-width="1.2"/>
+  <text x="734" y="82" class="font bad">✗ 盲目抽卡 · 整段重写</text>
+  <text x="734" y="106" class="font muted">背景/服装漂移看不出哪错了，</text>
+  <text x="734" y="123" class="font muted">每次返修都把整段词推倒重来</text>
+  <line x1="734" y1="142" x2="916" y2="142" stroke="#2d3c56" stroke-width="1"/>
+  <text x="734" y="168" class="font good">✓ 看图验收 + 局部替换指令</text>
+  <text x="734" y="192" class="font desc">直接看首帧图/样片挑穿帮，</text>
+  <text x="734" y="210" class="font desc">精准定位首次偏差时间与手别，</text>
+  <text x="734" y="228" class="font desc">只给局部可替换改词指令。</text>
+  <rect x="734" y="250" width="182" height="28" rx="6" fill="#0f172a"/>
+  <text x="825" y="268" text-anchor="middle" class="font muted" style="fill:#38bdf8;">省时省算力返修</text>
+</svg>

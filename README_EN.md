@@ -28,6 +28,10 @@ In multi-shot AI narrative videos, the most expensive failures are rarely image 
 
 This skill encodes real film-set discipline—fixed scene coordinates, body vs. gaze separation, left/right-hand-to-screen mapping, 180° axis tracking, and visual keyframe QA—and pairs it with native prompt rules for **Seedance 2.5** and **MiniMax H3**, taking you from a rough idea to copy-paste prompts.
 
+<p align="center">
+  <img src="assets/pain-points-en.svg" alt="4 Common AI Video Failures vs. Ai-Video-Blocking" width="100%" />
+</p>
+
 ---
 
 ## What Content Formats Does It Fit Best?
@@ -57,6 +61,10 @@ Works for any visual style (live-action, 3D, 2D anime, period, sci-fi) and aspec
 ## Real End-to-End Demo (Two-Shot Café Shot-Reverse-Shot)
 
 Both keyframes below were generated directly from this skill's Shot 1 and Shot 2 first-frame prompts, verifying **180° axis lock, character left-hand → screen lower-right mapping, and north-window lighting continuity**:
+
+<p align="center">
+  <img src="assets/blocking-axis-en.svg" alt="Top-Down Spatial Baseline & L/R Cross-Check" width="100%" />
+</p>
 
 | Shot 1 Keyframe (Medium｜South → North Establishing) | Shot 2 Keyframe (OTS Close-Up｜Over Lin Qiu's Right Shoulder) |
 | :---: | :---: |
@@ -130,8 +138,9 @@ Ai-Video-Blocking/
 ├── README_EN.md                           # English README (this file)
 ├── assets/                                # README showcase visuals
 │   ├── hero-cover.jpg
-│   ├── workflow-zh.svg
-│   ├── workflow-en.svg
+│   ├── pain-points-zh.svg / en.svg
+│   ├── blocking-axis-zh.svg / en.svg
+│   ├── workflow-zh.svg / en.svg
 │   ├── demo-shot1-keyframe.jpg
 │   └── demo-shot2-keyframe.jpg
 ├── references/                            # On-demand rules & model specs

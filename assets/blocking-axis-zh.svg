@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 360" width="960" height="360">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1320"/>
+      <stop offset="100%" stop-color="#141c2b"/>
+    </linearGradient>
+    <marker id="arrowAmber" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#f59e0b"/>
+    </marker>
+    <marker id="arrowCyan" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#38bdf8"/>
+    </marker>
+    <style>
+      .font { font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans SC", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+      .title { font-size: 14px; font-weight: 700; fill: #f8fafc; }
+      .label { font-size: 12px; font-weight: 600; fill: #e2e8f0; }
+      .muted { font-size: 11px; fill: #94a3b8; }
+      .cyan { font-size: 12px; font-weight: 700; fill: #38bdf8; }
+      .amber { font-size: 12px; font-weight: 700; fill: #fbbf24; }
+    </style>
+  </defs>
+
+  <rect width="960" height="360" rx="16" fill="url(#bg)"/>
+  <rect x="1" y="1" width="958" height="358" rx="15" fill="none" stroke="#243045" stroke-width="1.5"/>
+
+  <!-- Left Panel: Top-Down Blocking Map -->
+  <rect x="24" y="20" width="540" height="320" rx="12" fill="#111827" stroke="#2d3c56" stroke-width="1.2"/>
+  <text x="44" y="46" class="font title">1. 俯视空间基准与 180° 轴线（不随切镜改变）</text>
+
+  <!-- Room walls -->
+  <rect x="56" y="70" width="476" height="236" rx="6" fill="#0b1120" stroke="#475569" stroke-width="1.5"/>
+  <!-- North Window -->
+  <line x1="120" y1="70" x2="430" y2="70" stroke="#38bdf8" stroke-width="5"/>
+  <text x="275" y="62" text-anchor="middle" class="font cyan">北 (N) · 大落地窗（自然光主光源 ↓）</text>
+  <!-- East Door -->
+  <line x1="532" y1="125" x2="532" y2="195" stroke="#fbbf24" stroke-width="5"/>
+  <text x="516" y="164" text-anchor="end" class="font amber">东入口门</text>
+
+  <!-- Table -->
+  <rect x="190" y="110" width="180" height="70" rx="6" fill="#1e293b" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="280" y="150" text-anchor="middle" class="font label">长方形木桌</text>
+
+  <!-- Lin Qiu Start & Walk -->
+  <circle cx="155" cy="145" r="14" fill="#38bdf8" fill-opacity="0.2" stroke="#38bdf8" stroke-width="2"/>
+  <text x="155" y="149" text-anchor="middle" class="font cyan">A起</text>
+  <path d="M 155 162 L 155 210 Q 155 224 170 224 L 315 224" fill="none" stroke="#f59e0b" stroke-width="2" marker-end="url(#arrowAmber)"/>
+  <text x="225" y="216" text-anchor="middle" class="font muted" style="fill:#fbbf24;">绕桌南侧过道（无遮挡）</text>
+
+  <!-- Lin Qiu End -->
+  <circle cx="336" cy="224" r="14" fill="#38bdf8" stroke="#f8fafc" stroke-width="1.5"/>
+  <text x="336" y="228" text-anchor="middle" class="font label" style="fill:#0f172a;font-weight:700;">A终</text>
+
+  <!-- Jing Chuan Start & End -->
+  <circle cx="496" cy="160" r="13" fill="#a855f7" fill-opacity="0.25" stroke="#c084fc" stroke-width="1.8"/>
+  <text x="496" y="164" text-anchor="middle" class="font label" style="fill:#c084fc;">B起</text>
+  <path d="M 480 164 L 424 214" fill="none" stroke="#c084fc" stroke-width="2" stroke-dasharray="4,3" marker-end="url(#arrowCyan)"/>
+  <circle cx="408" cy="224" r="14" fill="#a855f7" stroke="#f8fafc" stroke-width="1.5"/>
+  <text x="408" y="228" text-anchor="middle" class="font label" style="fill:#ffffff;font-weight:700;">B终</text>
+
+  <!-- 180-degree Axis Line -->
+  <line x1="90" y1="224" x2="500" y2="224" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="6,5"/>
+  <text x="120" y="242" class="font muted" style="fill:#38bdf8;">180° 视线轴线</text>
+
+  <!-- Cameras (Same South Side) -->
+  <polygon points="295,286 307,270 319,286" fill="#38bdf8"/>
+  <text x="307" y="300" text-anchor="middle" class="font cyan">Cam 1（镜 1 朝北）</text>
+
+  <polygon points="220,276 238,266 234,284" fill="#fbbf24"/>
+  <text x="168" y="280" text-anchor="middle" class="font amber">Cam 2（镜 2 过肩）</text>
+  <line x1="238" y1="266" x2="392" y2="228" stroke="#fbbf24" stroke-width="1.2" stroke-dasharray="3,3" marker-end="url(#arrowAmber)"/>
+
+  <text x="294" y="328" text-anchor="middle" class="font muted">两镜机位同在轴线南侧 → 严格不越轴（非比例示意图）</text>
+
+  <!-- Right Panel: L/R Mapping Check -->
+  <rect x="584" y="20" width="352" height="320" rx="12" fill="#182234" stroke="#2d3c56" stroke-width="1.2"/>
+  <text x="604" y="46" class="font title">2. 人物自身左右 ↔ 画面左右交叉校验</text>
+
+  <rect x="604" y="68" width="312" height="74" rx="8" fill="#111827" stroke="#334155" stroke-width="1"/>
+  <text x="620" y="92" class="font cyan">镜 1：A 面东 · B 面西（南侧朝北拍）</text>
+  <text x="620" y="112" class="font label">• A 右手在南（近镜侧）→ 递出信封</text>
+  <text x="620" y="130" class="font label">• B 左手在南（近镜侧）→ 接住信封</text>
+
+  <rect x="604" y="156" width="312" height="92" rx="8" fill="#111827" stroke="#f59e0b" stroke-width="1.2"/>
+  <text x="620" y="180" class="font amber">镜 2：过肩正反打（A 右肩后拍 B）</text>
+  <text x="620" y="200" class="font label">• A 右肩虚化 → 固定在画面前景左侧</text>
+  <text x="620" y="218" class="font label">• B 面对镜头面西 → B 的左手 = 画面右侧</text>
+  <text x="620" y="236" class="font label">• 北窗光在 B 右侧 → 画面左后方打亮右脸</text>
+
+  <rect x="604" y="262" width="312" height="58" rx="8" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+  <text x="760" y="286" text-anchor="middle" class="font cyan">物理方位、人物左右手、画面左右三者一致</text>
+  <text x="760" y="306" text-anchor="middle" class="font muted">彻底杜绝“写的是左手，画出来变右手”的穿帮</text>
+</svg>

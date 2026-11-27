@@ -28,6 +28,10 @@
 
 本 Skill 把影视现场的**空间坐标系、人物朝向/视线分离、左右手与道具交接、180° 轴线规则、首帧看图验收**沉淀为可执行规范，并内置 **Seedance 2.5** 与 **MiniMax H3** 两大主流模型的专用提示词结构，帮你从“有一点想法”一路跑到“可直接粘贴出片”。
 
+<p align="center">
+  <img src="assets/pain-points-zh.svg" alt="普通提示词 4 大高频翻车 vs Ai-Video-Blocking 解法" width="100%" />
+</p>
+
 ---
 
 ## 可以做什么形式的内容？
@@ -57,6 +61,10 @@
 ## 实测效果展示（咖啡馆两镜正反打闭环）
 
 以下两张首帧图由本 Skill 自动生成的**镜头 1 / 镜头 2 首帧生图提示词**直接渲染产出，展示了 **180° 轴线锁定、人物自身左右手 ↔ 画面左右换算、北窗光影一致** 的实际效果：
+
+<p align="center">
+  <img src="assets/blocking-axis-zh.svg" alt="俯视空间基准与左右手换算图解" width="100%" />
+</p>
 
 | 镜头 1 首帧（中景｜南朝北建立空间） | 镜头 2 首帧（过肩近景｜林秋右肩后拍景川） |
 | :---: | :---: |
@@ -132,8 +140,9 @@ Ai-Video-Blocking/
 ├── README_EN.md                           # 英文说明
 ├── assets/                                # README 展示素材
 │   ├── hero-cover.jpg                     # 仓库头图
-│   ├── workflow-zh.svg                    # 中文 4 步出片流程图
-│   ├── workflow-en.svg                    # 英文 4 步出片流程图
+│   ├── pain-points-zh.svg / en.svg        # 4 大高频翻车 vs 解法对比图
+│   ├── blocking-axis-zh.svg / en.svg      # 俯视站位 + 180° 轴线 + 左右手换算图解
+│   ├── workflow-zh.svg / en.svg           # 4 步出片流程图
 │   ├── demo-shot1-keyframe.jpg            # 实测镜头 1 首帧图
 │   └── demo-shot2-keyframe.jpg            # 实测镜头 2 首帧图
 ├── references/                            # 按需加载的细则与模型规范（渐进披露）
