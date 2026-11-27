@@ -155,9 +155,9 @@ Ai-Video-Blocking/
 │   ├── 03_走位动作与道具连续性.md           # Blocking choreography & prop continuity
 │   ├── 04_摄影机与镜头轴线.md               # Camera, 180° axis & L/R-to-screen check
 │   ├── 05_镜头连续性与拆镜.md               # Shot handoff & split-shot criteria
-│   ├── 06_样片验收与偏差修正.md             # Sample QA & localized patching
+│   ├── 06_样片验收与偏差修正.md             # Sample QA, localized patching & A/V sync checks
 │   ├── 07_Seedance提示词结构规范.md          # Seedance 2.5 (and 2.0) official prompt spec
-│   └── 08_MiniMax_H3提示词结构规范.md        # MiniMax H3 5-mode multimodal prompt spec
+│   └── 08_MiniMax_H3提示词结构规范.md        # MiniMax H3 5-mode multimodal & A/V SFX sync spec
 └── templates/                             # On-demand delivery templates
     ├── 站位与走位方案模板.md
     ├── 首帧生图提示词模板.md
@@ -174,3 +174,4 @@ Ai-Video-Blocking/
 - **V1.0**: Initial blocking, spatial coordinate, prop continuity, camera axis, shot-splitting, and sample QA framework.
 - **V1.1**: Added progressive-disclosure routing table in `SKILL.md`; added character L/R ↔ screen L/R cross-check; focused workflow on T2V / I2V / Ref2V.
 - **V1.2**: Integrated official **Seedance 2.5 (and 2.0)** and **MiniMax H3** prompt specifications, real visual showcase assets, and bilingual GitHub READMEs.
+- **V1.3**: Added three-category physical sound-effect A/V sync rules (transient contact lock, continuous action start/stop lock, ambient/off-screen separation, and cross-field timeline alignment) across MiniMax H3 specs, pre-delivery rehearsal, and sample QA checklists.
