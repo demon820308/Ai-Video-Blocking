@@ -20,6 +20,12 @@
   <a href="README.md">中文</a> &nbsp;|&nbsp; <strong>English</strong>
 </p>
 
+> [!TIP]
+> **🎬 Companion Advanced Skill｜Twin-Skill Workflow from Spatially Clean to True Cinema**
+> - **① Spatial Foundation (This Repo)**: **Ai-Video-Blocking** — Locks landmarks, blocking paths, 180° axes, L/R hand-to-screen mapping, keyframe QA, and Seedance 2.5 / MiniMax H3 standard prompt formats.
+> - **② Advanced Cinematic Upgrade**: 👉 **[Ai-Cinematic-Skill](https://github.com/demon820308/Ai-Cinematic-Skill)** — Adds 5-element scene audit, Meisner acting & FACS micro-expressions, discrete FOV optics & 60/30/10 lighting, fight/physics locks, Hell-Grind feature asset pipeline, and 15 Seedance failure rescues.
+> - **How to pair**: Use **Ai-Video-Blocking** first to prevent spatial/hand/axis errors, then pass the locked blocking into **[Ai-Cinematic-Skill](https://github.com/demon820308/Ai-Cinematic-Skill)** for cinematic performance, optics, and heavy production polish (or run a `2 → 1 → 2` workflow for multi-scene films).
+
 ---
 
 ## Why This Skill?

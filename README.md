@@ -20,6 +20,12 @@
   <strong>中文</strong> &nbsp;|&nbsp; <a href="README_EN.md">English</a>
 </p>
 
+> [!TIP]
+> **🎬 进阶搭档 Skill 上线｜双剑合璧，从“空间不穿帮”升级到“真电影质感”**
+> - **① 基础空间闭环（本仓库）**：**Ai-Video-Blocking** —— 锁死地标、站位走位、180° 轴线、左右手 ↔ 画面左右换算与 Seedance / MiniMax H3 标准出词。
+> - **② 进阶电影感增强**：👉 **[Ai-Cinematic-Skill](https://github.com/demon820308/Ai-Cinematic-Skill)** —— 专攻剧本 5 要素审计、Meisner 潜台词与 FACS 微表情、离散 FOV 光学与 60/30/10 光色、硬核格斗物理、Hell-Grind 长片资产与 Seedance 15 类疑难翻车急救。
+> - **一句话选型**：怕穿帮（串位/越轴/换手）先用本 Skill；嫌假（假演/平光/绵软打斗/长片漂移/疑难翻车）接 **[Ai-Cinematic-Skill](https://github.com/demon820308/Ai-Cinematic-Skill)**。
+
 ---
 
 ## 为什么需要这个 Skill？
@@ -80,12 +86,24 @@
 ### 安装与启用
 
 ```bash
-# 方式一：通过 skills CLI 一键安装
+# 方式一：通过 skills CLI 一键安装（推荐同时安装进阶搭档 Ai-Cinematic-Skill）
 npx skills add https://github.com/demon820308/Ai-Video-Blocking
+npx skills add https://github.com/demon820308/Ai-Cinematic-Skill
 
 # 方式二：直接克隆到本地 skills 目录
 git clone https://github.com/demon820308/Ai-Video-Blocking.git
+git clone https://github.com/demon820308/Ai-Cinematic-Skill.git
 ```
+
+### 双 Skill 怎么配合使用？
+
+| 协作模式 | 适用场景 | 执行顺序 |
+| :--- | :--- | :--- |
+| **单场升格（`1 → 2`）** | 最常用：空间排稳了，但画面像 AI 假演/平光 | 先用 **Ai-Video-Blocking** 定站位、轴线与左右手 → 把结果贴给 **[Ai-Cinematic-Skill](https://github.com/demon820308/Ai-Cinematic-Skill)** 注入潜台词/FACS/FOV 光学/60-30-10 光色 |
+| **长片三明治（`2 → 1 → 2`）** | 多场次短片/长片工业化制作 | 先用 **[Ai-Cinematic-Skill](https://github.com/demon820308/Ai-Cinematic-Skill)** 审剧本、建表演母版与灰底无头资产 → 再用 **Ai-Video-Blocking** 逐场排空间与首帧 → 最后用 **[Ai-Cinematic-Skill](https://github.com/demon820308/Ai-Cinematic-Skill)** 升格出词与翻车急救 |
+| **各自独立使用** | 轻量剧情片 / 单项专项需求 | 只需防穿帮排戏 → 单用 **Ai-Video-Blocking**；只需特写微表情/格斗编排/空镜底图/15 类翻车急救 → 单用 **[Ai-Cinematic-Skill](https://github.com/demon820308/Ai-Cinematic-Skill)** |
+
+> **同时安装时的调用技巧**：发话时在句首显式点名 `用 Ai-Video-Blocking`（排空间/轴线/左右手）或 `用 Ai-Cinematic-Skill`（升格电影感/表演/动作/长片资产/排错），触发最干净、互不打架。
 
 保持 `SKILL.md` 位于文件夹根目录，并保留 `references/` 与 `templates/` 相对路径：
 
