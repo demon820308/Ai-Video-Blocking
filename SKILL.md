@@ -88,7 +88,7 @@ description: AI 视频人物站位、走位、摄影机调度与镜头连续性�
   - **T2V**：自包含完整场景地标、人物可见外观、初始站位、动作轨迹、运镜与落幅；
   - **I2V（首帧/首尾帧）**：不重复大段静态背景，聚焦动作触发、走位路径、经过地标与身前/身后、左右手交接、运镜与落幅（首尾帧保持同画幅）；
   - **Ref2V / 多关键帧**：文本逐一绑定 `图片 N` 编号与用途，多关键帧首句写明「以图片 1 至图片 N 的顺序作为关键帧」。
-- **MiniMax H3（专用结构化多模态格式）**：先读取 `references/08_MiniMax_H3提示词结构规范.md`。按 `T2VA / I2VA / FL2VA / L2VA` 输出「首行对齐指令 + `integrated_multimodal_description` + `overall_soundscape` + `non_diegetic_music`」，或按 `Ref2VA` 输出六段式结构（英文正文、对白 `<d>` 与画面文字保留原语言、标签与时长两位小数严格一致）。
+- **MiniMax H3（专用结构化多模态格式）**：先读取 `references/08_MiniMax_H3提示词结构规范.md`。按 `T2VA / I2VA / FL2VA / L2VA` 输出「首行对齐指令 + `integrated_multimodal_description` + `overall_soundscape` + `non_diegetic_music`」，或按 `Ref2VA` 输出六段式结构（对白 `<d>` 与画面文字保留原语言、标签与时长两位小数严格一致）；**默认同时交付「官方英文结构版 + 中文对照版」**，方便用户核对（除非用户指定只要单语）。
 
 未指定目标模型时，默认按通用中文「精简执行版」交付（动作复杂或需逐秒核对时附「分秒场记版」）。
 
