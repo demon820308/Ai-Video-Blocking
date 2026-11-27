@@ -36,6 +36,7 @@ non_diegetic_music: ...
    - `[Shot 1]` 开头标明画风与初始构图（如 `Live-action, cinematic, a medium-wide shot frames...`），**首镜不写时间戳**。
    - **I2VA**：先锚定 `<Picture 1>` 的主体、服装、站位与场景，再顺着时间线推进动作与反应（`首帧锚定 → 动作启动 → 持续发展 → 落幅/反应`）。
    - **FL2VA**：不重复写两张静态图，重点描写从 `Picture 1` 到 `Picture 2` 的连续过渡路径，结尾稳稳落回 `Picture 2` 的姿态与构图。
+   - **可动地标（I2VA / FL2VA）**：若参考图含本镜被开合的门窗/抽屉，须顺着原图把手侧写明转轴侧与室内/室外摆向，禁无方向被动态。
    - **多镜切镜**：后续镜头按顺序编号并带递增时间戳，如 `[Shot 2] At 00:03.500, the camera cuts to...`（切镜须在总时长内）。
    - **运镜写法（Motion Type + Amplitude + Speed）**：融入自然英文句子，不堆砌标签。可用动作：`Push In / Pull Out / Zoom In / Zoom Out / Pan Left / Pan Right / Truck Left / Truck Right / Tilt Up / Tilt Down / Pedestal Up / Pedestal Down / Arc Shot / Tracking Shot / Static Shot / Shake Slightly / POV`；幅度：`with small amplitude / with large amplitude`；速度：`at slow speed / at fast speed`（中等幅度与正常速度可省略）。
      - 示例：`The camera pushes in with small amplitude at slow speed toward the kraft envelope in his left hand.`
