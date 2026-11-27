@@ -151,7 +151,7 @@ Ai-Video-Blocking/
 │   └── demo-shot2-keyframe.jpg
 ├── references/                            # On-demand rules & model specs
 │   ├── 01_人物身份与造型锁定.md             # Character identity & wardrobe lock
-│   ├── 02_场景空间坐标与地标.md             # Spatial coordinates & landmarks
+│   ├── 02_场景空间坐标与地标.md             # Spatial coordinates, landmarks & articulated fixture locks
 │   ├── 03_走位动作与道具连续性.md           # Blocking choreography & prop continuity
 │   ├── 04_摄影机与镜头轴线.md               # Camera, 180° axis & L/R-to-screen check
 │   ├── 05_镜头连续性与拆镜.md               # Shot handoff & split-shot criteria
@@ -175,3 +175,4 @@ Ai-Video-Blocking/
 - **V1.1**: Added progressive-disclosure routing table in `SKILL.md`; added character L/R ↔ screen L/R cross-check; focused workflow on T2V / I2V / Ref2V.
 - **V1.2**: Integrated official **Seedance 2.5 (and 2.0)** and **MiniMax H3** prompt specifications, real visual showcase assets, and bilingual GitHub READMEs.
 - **V1.3**: Added three-category physical sound-effect A/V sync rules (transient contact lock, continuous action start/stop lock, ambient/off-screen separation, and cross-field timeline alignment) across MiniMax H3 specs, pre-delivery rehearsal, and sample QA checklists.
+- **V1.4**: Added conditional articulated-fixture constraints (doors, windows, drawers) requiring reference-image handle verification and a 3-tuple lock (handle/opening side + opposite hinge/track side + inward/outward swing direction) across spatial landmarks, MiniMax H3 Ref2VA definitions, pre-delivery rehearsal, and sample QA checklists.

@@ -58,7 +58,7 @@ non_diegetic_music: ...
 
 当使用多张人物/场景/道具参考图生成时，按以下严格顺序输出 6 个英文段落：
 
-1. **`subject_definitions`**：逐行定义 `<Subject N>`（复用的人物/场景/服装/道具，并在定义中引用其来源 `<Picture N>`）与 `<Picture N>`（仅当某图直接作为某镜首帧/尾帧/分镜锚点时单列）。标签一旦分配，全文一致。
+1. **`subject_definitions`**：逐行定义 `<Subject N>`（复用的人物/场景/服装/道具，并在定义中引用其来源 `<Picture N>`）与 `<Picture N>`（仅当某图直接作为某镜首帧/尾帧/分镜锚点时单列）。标签一旦分配，全文一致。若场景中包含本镜会被开合的可动地标（如门窗），须在此按场景图把手位置一并锁死转轴侧与把手开口侧（如 `hinged on its right jamb with its handle on the left opening edge`），防 `retention_analysis` 与动作描述冲突。
    - 示例：`<Subject 1> is the woman in <Picture 1>, wearing a light gray trench coat with shoulder-length black hair.`
 2. **`summary`**：1 段简短英文，以方括号任务类型开头（如 `[reference generation]`、`[keyframe completion + reference generation]`），概括主体、镜头流与参考关系，不引入新标签。
 3. **`retention_analysis`**：逐行说明每个标签在目标视频中如何保留（fully preserved / partially preserved / transferred / reused）。
@@ -71,4 +71,5 @@ non_diegetic_music: ...
 - [ ] 所有 `<Picture N>` / `<Subject N>` / `(S1)` 标签前后一致，无悬空未定义标签；
 - [ ] 正文为自然具体英文，对白 `<d>` 与画面文字 `"..."` 保留原文未误翻；
 - [ ] 空间站位、180° 轴线与人物左右手 ↔ 画面左右映射已完全承接调度方案；
+- [ ] 本镜被开合的门窗/抽屉等可动地标已在定义与动作段锁死转轴侧、把手开口侧与室内/室外摆向（与参考图把手位置一致，无悬空被动态）；
 - [ ] `overall_soundscape` 与画面时间轴严格同序，无前文剧透音效词，瞬态音均对齐物理接触完成瞬间（未完成动作未写完成态音效）。
