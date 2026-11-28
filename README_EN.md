@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Version-V1.2-blue?style=flat-square" alt="Version V1.2" />
+  <img src="https://img.shields.io/badge/Version-V1.3-blue?style=flat-square" alt="Version V1.3" />
   <img src="https://img.shields.io/badge/Seedance-2.5%20%2F%202.0-orange?style=flat-square" alt="Seedance 2.5 / 2.0" />
   <img src="https://img.shields.io/badge/MiniMax-H3%20(T2VA%20~%20Ref2VA)-purple?style=flat-square" alt="MiniMax H3" />
   <img src="https://img.shields.io/badge/Modes-T2V%20%7C%20I2V%20%7C%20Ref2V-green?style=flat-square" alt="Modes" />
@@ -57,10 +57,10 @@ Works for any visual style (live-action, 3D, 2D anime, period, sci-fi) and aspec
 
 | ✅ What It Does | ❌ What It Doesn't Do |
 | :--- | :--- |
-| **Rough idea / script → blocking & shot splitting**: Fills in landmarks, routes, and camera axes (clearly marking assumptions vs. confirmed facts) | **Does not render video directly**: Outputs blocking plans, prompts, and localized fixes; final video runs on Seedance / MiniMax H3 |
+| **Rough idea / script → blocking & shot splitting**: Fills in landmarks, routes, and axes (preserving user script verbatim, tagging additions as `〔体系补〕`, with orbit geometry lock & 1s position-lock wide) | **Does not render video directly**: Outputs blocking plans, prompts, and localized fixes; final video runs on Seedance / MiniMax H3 |
 | **First-frame image prompts**: Static-moment framing with character L/R ↔ screen L/R cross-checks and negative constraints | **Not a full-series screenwriter**: Focuses on staging scenes cleanly, not plotting 30-episode outlines |
-| **Model-specific video prompts**: Routes automatically to **Seedance 2.5/2.0** (4-part structure + integer timestamps) or **MiniMax H3** (`T2VA`–`Ref2VA` structured multimodal format) | **Cannot guarantee 100% zero-reroll perfection**: Eliminates spatial/prompt contradictions, while generative models still retain stochastic variance |
-| **Visual keyframe & sample QA**: Inspects generated keyframes for background drift, wardrobe jumps, gaze errors, and hand swaps, giving localized patch instructions | **Not for pure landscapes, static product turntables, or abstract VFX**: Use style-specific generators for non-character shots |
+| **Model-specific video prompts**: Routes automatically to **Seedance 2.5/2.0** (timecoded + non-timecoded dual pass, Jimeng audio channels, dual-state ref checks) or **MiniMax H3** (`T2VA`–`Ref2VA` multimodal format) | **Cannot guarantee 100% zero-reroll perfection**: Eliminates spatial/prompt contradictions, while generative models still retain stochastic variance |
+| **Visual keyframe & sample QA**: Inspects generated keyframes for background drift, wardrobe jumps, gaze errors, and hand swaps, giving sentence-level localized patch instructions | **Not for pure landscapes, static product turntables, or abstract VFX**: Use style-specific generators for non-character shots |
 
 ---
 

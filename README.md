@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Version-V1.2-blue?style=flat-square" alt="Version V1.2" />
+  <img src="https://img.shields.io/badge/Version-V1.3-blue?style=flat-square" alt="Version V1.3" />
   <img src="https://img.shields.io/badge/Seedance-2.5%20%2F%202.0-orange?style=flat-square" alt="Seedance 2.5 / 2.0" />
   <img src="https://img.shields.io/badge/MiniMax-H3%20(T2VA%20~%20Ref2VA)-purple?style=flat-square" alt="MiniMax H3" />
   <img src="https://img.shields.io/badge/Modes-T2V%20%7C%20I2V%20%7C%20Ref2V-green?style=flat-square" alt="Modes" />
@@ -57,10 +57,10 @@
 
 | ✅ 可以做什么 | ❌ 不能做什么 |
 | :--- | :--- |
-| **粗想法 / 剧本 → 空间调度与拆镜**：自动补齐地标、站位、走位与轴线（补全项明确标为「调度补足假设」） | **不能直接渲染视频**：仅产出调度方案、提示词与修正指令，最终视频需在 Seedance / MiniMax H3 平台生成 |
+| **粗想法 / 剧本 → 空间调度与拆镜**：自动补齐地标、站位、走位与轴线（严格不改用户原文，体系补全项标为 `〔体系补〕`；含环绕绝对几何锁与 1s 定场宽） | **不能直接渲染视频**：仅产出调度方案、提示词与修正指令，最终视频需在 Seedance / MiniMax H3 平台生成 |
 | **输出首帧生图提示词**：定格静态瞬间 + 人物左右手 ↔ 画面左右防反校验 + 负面约束 | **不做长篇编剧策划**：擅长把已有剧情拍清楚，不负责写 30 集大纲或爆款爽点策划 |
-| **按目标模型输出专用视频词**：自动分流 **Seedance 2.5/2.0** 四段式结构或 **MiniMax H3** 五模式多模态结构 | **不能保证 100% 一次抽卡零瑕疵**：能清掉逻辑与已知模型坑点，但视频模型本身仍有随机性 |
-| **首帧图 / 样片看图验收与局部返修**：抓出背景漂移、服装跳变、视线偏移、左右手错位，只给局部改词指令 | **不适合纯空镜/静物/抽象特效**：无人物空间调度需求时，建议直接使用各平台的垂直风格 Skill |
+| **按目标模型输出专用视频词**：自动分流 **Seedance 2.5/2.0**（含时间码/无时间码双版、即梦四通道音频、挂图核对与两态防冲突）或 **MiniMax H3** 五模式多模态结构 | **不能保证 100% 一次抽卡零瑕疵**：能清掉逻辑与已知模型坑点，但视频模型本身仍有随机性 |
+| **首帧图 / 样片看图验收与局部返修**：抓出背景漂移、服装跳变、视线偏移、左右手错位，执行句级局部改词修复 | **不适合纯空镜/静物/抽象特效**：无人物空间调度需求时，建议直接使用各平台的垂直风格 Skill |
 
 ---
 
